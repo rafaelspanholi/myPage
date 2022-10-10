@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<h1 id="title">Survey Form</h1>
+<p id="description">This is a survey form</p>
+<form id="survey-form">
+    <fieldset>
+        <div>
+            <label id='name-label'> Name:<input required id="name" type="text" placeholder='John Doe'></label>
+        </div>
+        <div>
+            <label id='email-label'>Email:<input required id="email" type="email" placeholder='email@email.com'></label>
+        </div>
+        <div>
+            <label id='number-label'>Age:<input placeholder='18' id="number" type="number" min="18" max="105"></label>
+        </div>
+        <div>
+            <label id="gender">Gender:
+                <select name="gender" id="dropdown">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Chose One:</legend>
+
+        <div>
+            <input type="radio" id="One" name="Chose" value="One" checked>
+            <label for="One">One</label>
+        </div>
+
+        <div>
+            <input type="radio" id="Two" name="Chose" value="Two">
+            <label for="Two">Two</label>
+        </div>
+
+        <div>
+            <input type="radio" id="Three" name="Chose" value="Three">
+            <label for="Three">Three</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Chose as many as you want:</legend>
+
+        <div>
+            <input type="checkbox" id="This" name="This" value="This" checked>
+            <label for="This">This</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="That" name="That" value="That">
+            <label for="That">That</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div>
+            <label for="">Tell us your story:</label>
+            <textarea id="Comment" name="Comment" rows="6" cols="40" placeholder="Tell us more">
+</textarea>
+        </div>
+    </fieldset>
+    <button id="submit" type="submit">Submit</button>
+</form>
+
+</html>
