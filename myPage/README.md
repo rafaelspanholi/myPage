@@ -1,3 +1,0 @@
-# myPage
-
-Personal Website project.
